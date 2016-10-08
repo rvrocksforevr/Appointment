@@ -1,1 +1,183 @@
-.style{}
+/*appointment_popup*/
+.logo_link_right .right_links a.appointment_popup{ cursor:pointer; }
+.appointment_popup .modal-header{ text-align:center;background:#725780;font-size:36px;color:#fff;margin-left:-15px;margin-right:-15px;border:0px; position:relative}
+.appointment_popup .modal-header:after{content:"";display:block;position:absolute;right:0px;bottom:-15px;width: 0; height: 0; border-style: solid; border-width: 15px 15px 0 0; border-color: #492d57 transparent transparent transparent;}
+.appointment_popup .modal-header:before{content:"";display:block;position:absolute;left:0px;bottom:-15px;width: 0; height: 0; border-style: solid; border-width: 0 15px 15px 0; border-color: transparent #492d57 transparent transparent;}
+
+
+.appointment_popup .modal-title{ line-height:28px;font-size:30px;color:#fff; }
+
+.appointment_popup .modal-dialog{ max-width:910px;width:100%;     position: absolute; margin: auto; max-width: 910px; width: 100%; left: 0px; right: 0px; top: 0px; bottom: 0px; height: 390px;}
+.appointment_popup .close{ opacity:1;text-shadow:none; }
+.appointment_popup .close_btn{ font-size: 45px; position: absolute; top: -20px; right: -15px;color:#fff;}
+.appointment_popup .modal-body{ padding:30px 34px }
+
+
+.ui-timepicker-standard{ z-index:99999999 !important; }
+
+.appointment_popup .boot_appointment_submit{ max-width:350px;color:#725780;width:100%;display:block;margin: auto;text-align:center;padding:10px;border:#725780 solid 2px;border-radius:4px;font-size:20px;margin-top:30px; }
+
+
+.appointment_container div{ margin-bottom:15px; }
+.appointment_container div input{ max-width:48%;width:100%;padding:10px; background:#e1dbe4;border:0px;}
+.appointment_container div .speciality_container , .appointment_container div .doctor_name_container ,.appointment_container  .day_container ,.appointment_container   .time_container {max-width:48%;width:100%;margin-bottom:0px;}
+.appointment_container div .sumo_specialities , .appointment_container div .sumo_doctor_name ,.appointment_container #datepicker , .appointment_container .timepicker{ max-width:100%;width:100%; margin-bottom:0px;background:#e1dbe4;color:#a9a9a9;}
+
+.appointment_container .SumoSelect > .CaptionCont{ border:0px;background:#e1dbe4; }
+
+.appointment_container .SumoSelect > .CaptionCont > span{ color:#a9a9a9;}
+
+.appointment_container #datepicker{ background:#e1dbe4 url(../images/calendar-icon.png) no-repeat; background-size: 24px; background-position: right 10px center;  cursor:pointer;}
+
+.appointment_container .timepicker{ background:#e1dbe4 url(../images/call_btn.png) no-repeat; background-size: 24px; background-position: right 10px center;  cursor:pointer;}
+
+.appointment_container .SumoSelect > .CaptionCont > label > i{ background-image:url(../images/chevron-arrow.png) ;background-size:18px;right:20px; }
+
+.logo_link_right .right_links a.appointment_popup{ outline:none; }
+
+
+.appointment_container .feedback_comment{ background:#e1dbe4;resize:none;width:100%;max-width:100%;height:150px; }
+
+
+
+/*Ravi Appointment*/
+.steps_container .nav-tabs li a{ border:#fff solid 2px;margin-right:0px; border-radius:0px;}
+.steps_container .nav-tabs li a:hover{ background:#e1dbe4;border:#e1dbe4 solid 2px; }
+.steps_container .nav-tabs li a:hover:after{ content: ""; height: 24px; width: 24px; position: absolute; right: 0px; background-position: top center; transform: rotate(270deg); top:10px; z-index:99}
+.steps_container .nav-tabs li a:hover:after{  content: "";  height: 24px; width: 24px; position: absolute; right: -20px; background-position: top center; transform: rotate(0deg); top:0px;  }
+.steps_container .nav-tabs li{ max-width:33.333%;width:100%;text-align:left;position:relative; }
+.steps_container .nav-tabs li.active a{ background:#725780; color:#fff; border:0px;border:0px;border-radius:0px;border:#725780 solid 2px; }
+.steps_container .nav-tabs li:after{  content: ""; height: 24px; width: 24px; position: absolute; right: 0px; background-position: top center; transform: rotate(270deg); top:10px; z-index:99}
+.steps_container .nav-tabs li.active:after , .steps_container .nav-tabs li.active:hover:after{  content: "";  height: 24px; width: 24px; position: absolute; right: -20px; background-position: top center; transform: rotate(0deg); top:0px; width: 0;
+height: 0;
+border-style: solid;
+border-width: 23px 0 23px 20px;
+border-color: transparent transparent transparent #705780;
+
+}
+
+
+
+.steps_container .nav-tabs li:hover:after{  content: "";  height: 24px; width: 24px; position: absolute; right: -20px; background-position: top center; transform: rotate(0deg); top:0px; width: 0;
+height: 0;
+border-style: solid;
+border-width: 23px 0 23px 20px;
+border-color: transparent transparent transparent #e1dbe4;
+
+}
+
+
+.nav>li.step_2 > a{ padding-left:30px; }
+.nav>li.step_3 > a{ padding-left:30px; }
+
+
+.steps_container{ margin-top:20px; }
+
+.dept_cat{ max-width:50%;width:100%;float:left; }
+.dept_cat figure{ text-align:center; }
+.dept_image{ height:100px;margin: auto; }
+
+.doc_image{ max-width:50%;width:100%;float:right; }
+.doc_image figure{ text-align:center; }
+.doc_image{ height:100px;margin: auto; }
+
+
+.button_container{ text-align:center; }
+
+.next_btn{ max-width: 150px;display: inline-block; width: 100%; text-align: center; padding: 10px; margin-right: 10px; border: #725780 solid 2px; border-radius: 4px; font-size: 21px; color: #725780;font-family:'latobold' }
+.next_btn:focus , .next_btn:active , .cancel_btn:visited , .cancel_btn:active , .cancel_btn:focus{  text-decoration:none; color:#725780}
+
+.next_btn:hover , .cancel_btn:hover{  border: 0px; background: #725780;color:#fff; }
+
+.cancel_btn{ max-width: 150px;display: inline-block; width: 100%; text-align: center; padding: 10px; margin-left: 10px; border: #725780 solid 2px; border-radius: 4px; font-size: 21px; color: #725780; font-family:'latobold'}
+
+
+
+/*step2*/
+.step_2_container{ margin-top:15px; }
+.calander_div{ float:right; }
+.steps_container .nav-tabs .step_1.visited , .steps_container .nav-tabs .step_2.visited{     background: #725780;
+    color: #fff;
+    border: 0px;
+    border: 0px;
+    border-radius: 0px;
+    border: #725780 solid 2px; }
+	
+.steps_container .nav-tabs .step_1.visited	a:after , .steps_container .nav-tabs .step_2.visited a:after{
+	content: "";
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    right: -20px;
+    background-position: top center;
+    transform: rotate(0deg);
+    top: -2px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 23px 0 23px 20px;
+    border-color: transparent transparent transparent #705780;z-index:11}
+	
+	
+.steps_container .nav-tabs .step_1.visited	a:before , .steps_container .nav-tabs .step_2.visited	a:before{ content: ""; height: 24px; width: 24px; position: absolute; right: -26px; background-position: top center; transform: rotate(0deg); top: -2px; width: 0; height: 0; border-style: solid; border-width: 23px 0 23px 20px; border-color: transparent transparent transparent #fff;z-index:10} 
+
+.steps_container .nav-tabs li.visited a{ border:0px }
+
+.steps_container .nav-tabs li.visited a:hover{ background:#725780;color:#fff;border:0px;}
+
+.steps_container .nav-tabs li.visited:hover:after{display:none !important;}
+
+
+.appointment_heading{display: block;  text-align: center;  margin-bottom: 15px;  font-size: 17px;  font-family: 'latobold';  color: #725780;}
+
+
+.calander_div #datepicker .ui-datepicker-inline.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all{ border-radius:0px;padding:0px; }
+.calander_div #datepicker  .ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all{ background:#725780 }
+
+.calander_div #datepicker .ui-datepicker-title{ color:#fff; }
+.calander_div #datepicker .ui-datepicker-calendar thead{ border-bottom:1px solid #e1dbe4;}
+.calander_div #datepicker .ui-datepicker-calendar th span{ color:#725780 ; text-align:center; }
+.calander_div #datepicker .ui-datepicker-calendar tbody tr a{     text-align: center; color: #725780; border: 1px solid #e1dbe4; background: transparent; padding: 8px; font-size: 16px;line-height:14px;}
+.calander_div #datepicker .ui-datepicker-calendar tbody tr a.ui-state-active{ background:#725780;color:#fff;font-family:'latobold';border:0px;border-bottom:#725780 solid 1px; }
+.calander_div #datepicker .ui-datepicker-next span{ background:url(../images/next-arrow_white.png) no-repeat;    height: 100%; width: 100%; top: 8px;     display: inline-block; left: 8px; background-size: 18px; background-position: center center;}
+
+.calander_div #datepicker .ui-datepicker-next:hover span{ background:url(../images/chevron-arrow.png) no-repeat;    height: 100%; width: 100%; top: 8px;     display: inline-block; left: 8px; background-size: 18px; background-position: center center;transform:rotate(270deg)}
+
+
+.calander_div #datepicker .ui-datepicker-prev span{ background:url(../images/next-arrow_white.png) no-repeat;    height: 100%; width: 100%; top: 8px;     display: inline-block; left: 8px; background-size: 18px; background-position: center center;transform:rotate(180deg)}
+
+.calander_div #datepicker .ui-datepicker-prev:hover span{ background:url(../images/chevron-arrow.png) no-repeat;    height: 100%; width: 100%; top: 8px;     display: inline-block; left: 8px; background-size: 18px; background-position: center center;transform:rotate(90deg)}
+
+.calander_div #datepicker .ui-datepicker .ui-datepicker-prev,.calander_div #datepicker .ui-datepicker .ui-datepicker-next{ height:30px;width:30px; }
+.calander_div #datepicker .ui-datepicker table{ margin-bottom:0px; }
+
+
+
+.calander_div{ max-width:275px;width:100%; }
+
+.step_2_detail_section{ max-width:calc(100% - 300px);width:100%;float:left; width:100%; }
+
+.step_2_detail_section div{ margin-bottom:10px; }
+
+.step_2_detail_section .name_details input , .step_2_detail_section .phone_details input {max-width: 49%; width: 100%; padding: 8px 10px; border: none; background: #e1dbe4; font-size: 16px;}
+
+.step_2_detail_section .email input , .step_2_detail_section .address_details textarea , .step_2_detail_section .subs_details textarea {max-width: 100%; width: 100%; padding: 8px 10px; border: none; background: #e1dbe4; font-size: 16px;resize:none;}
+
+.step_2_detail_section .address_details textarea , .step_2_detail_section .subs_details textarea {height:82px;}
+
+.date_choose{     margin-top: 15px; text-align: center; display:none;}
+
+.appoint_date{ background: #725780; color: #fff; padding: 5px 10px; border-radius: 5px; display: inline-block; cursor:pointer;}
+
+
+.calander_div #datepicker .ui-datepicker-unselectable span{    padding: 8px 9px; text-align: center;}
+
+.change_text { display:block;text-align:center; }
+.change_text sub{ font-size: 11px;  text-align: Center;  display: block;  line-height: 12px; display:none;}
+
+.time_allotment{ margin-top:20px;margin-bottom:20px;text-align:center; }
+.time_slot_outer{ display:inline-block;margin-right:10px; margin-top:5px;margin-bottom:5px; }
+.time_slot_new{ display:inline-block;padding:6px 10px;font-size:14px;background:#fff;color:#725780;border-radius:4px; border:#725780 solid 2px;  }
+.time_slot_new:hover, .time_slot_new:focus , .time_slot_new:active{ display:inline-block;padding:6px 10px;font-size:14px;background:#725780;color:#fff;border-radius:4px;  text-decoration:none; transition:all ease-in 0.2s;}
+
+.label_heading{     display: block; text-align: center; font-family: 'latobold'; color: #725780; border-bottom: 2px solid #725780; display: block; margin: auto; width: 82%; margin-top: 20px; }
