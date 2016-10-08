@@ -1,0 +1,167 @@
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="fa fa-times-circle-o close_btn"></span></button>
+        <h4 class="modal-title" id="myModalLabel">Book an Appointment</h4>
+      </div>
+      <div class="modal-body">
+      
+      	<div class="steps_container">
+        	<div>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active step_1"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Choose Specilities & Doctor</a></li>
+    <li role="presentation" class="step_2"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Add Profile Data</a></li>
+    <li role="presentation" class="step_3"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Status</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home">
+    	<div class="steps_container">
+        	<div class="appointment_container clearfix">
+                
+                <div class="doctor_details clearfix">
+                    <div class="speciality_container pull-left">
+                    <select class="specialities_drop " name="specialities"  onchange="select_item()" >
+                        <option>Specilities</option>
+
+                        <option value="ART">ART</option>
+                        <option value="Fetal medicine">Fetal medicine</option>
+                        <option value="Neurology and Neurosurgery">Neurology and Neurosurgery</option>
+                        <option value="Interventional Cardiology">Interventional Cardiology</option>
+                        <option value="Arthroscopy , Joint replacement, spine surgery">Arthroscopy , Joint replacement, spine surgery</option>
+                        <option value="Gastroenterology">Gastroenterology</option>
+                        <option value="Urology">Urology</option>
+                        <option value="Nephrology and Dialysis">Nephrology and Dialysis</option>
+                        <option value="Faciomaxillary">Faciomaxillary</option>
+                        <option value="Pediatric Surgeries">Pediatric Surgeries</option>
+                        <option value="Bariatric Surgeries">Bariatric Surgeries</option>
+                        <option value="Plastic and reconstructive surgeries">Plastic and reconstructive surgeries</option>
+                        <option value="Accident And Emergency (Casualty)">Accident And Emergency (Casualty)</option>
+                        <option value="Social and Preventive Medicine ">Social and Preventive Medicine </option>
+                        <option value="Obs And Gynae">Obs And Gynae</option>
+                        <option value="Internal Medicines ">Internal Medicines </option>
+                        <option value="Critical care ">Critical care </option>
+                        <option value="Paediatrics and neonatal Medicine ">Paediatrics and neonatal Medicine </option>
+                        <option value="Orthopedics, Spine And Joints ">Orthopedics, Spine And Joints </option>
+                        <option value="Surgery, MAS, Day Care Surgeries">Surgery, MAS, Day Care Surgeries</option>
+                        <option value="Ophthalmology">Ophthalmology</option>
+                        <option value="ENT">ENT</option>
+                        <option value="Dental">Dental</option>
+                        <option value="Physiotherapy and wellness">Physiotherapy and wellness</option>
+                        <option value="Pathology and Microbiology">Pathology and Microbiology</option>
+                        <option value="Radio Diagnosis">Radio Diagnosis</option>
+                        
+                    </select>
+                </div>
+                <div class="doctor_name_container pull-right">
+                <select class="doctor_drop " name="doctor_name" onchange="doc_select()">
+                    <option>Doctor</option>
+                    <option value="Anjani Kumar">Anjani Kumar</option>
+                    <option value="Deepak Khattar">Deepak Khattar</option>
+                    <option value="Jyoti Malik">Jyoti Malik</option>
+                </select>
+                </div>
+                </div>
+                
+                 <div class="clearfix">
+                 	<div class="dept_cat ">
+                        <figure>
+                            <img />
+                        </figure>
+                    </div>
+                 	<div class="doc_image ">
+                        <figure>
+                            <img />
+                        </figure>
+                    </div>
+                 </div>
+                 <div class="button_container step_1">
+                     <a class="next_btn" href="javacsript:void(0);">Next</a>
+                     <a class="cancel_btn" href="javacsript:void(0);">Cancel</a>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="profile">
+        <div class="step_2_container clearfix">
+        	<div class="step_2_detail_section">
+            	<div class="name_details clearfix">
+                	<input type="text" class="fname pull-left" name="fname" placeholder="Enter First Name"/>
+                    <input type="text" class="lname pull-right" name="lname" placeholder="Enter Last Name"/>
+                </div>
+                <div class="phone_details clearfix">
+                	<input type="text" class="primary_num pull-left" name="primary_number" placeholder="Mobile Number"/>
+                    <input type="text" class="alt_num pull-right" name="alt_number" placeholder="Alternate Mobile Number"/>
+                </div>
+                <div class="email clearfix">
+                	<input type="text" class="email pull-left" name="fname" placeholder="Enter Email Address"/>
+                </div>
+                <div class="address_details clearfix">
+                	<textarea class="adress_section" placeholder="Enter permanant Address"></textarea>
+                </div>
+                <div class="subs_details clearfix">
+                	<textarea class="additional_info" placeholder="How do you need our Assistance.??"></textarea>
+                </div>
+                
+                <div class="button_container step_2 clearfix">
+                     <a class="next_btn" href="javacsript:void(0);">Next</a>
+                     <a class="cancel_btn" href="javacsript:void(0);">Cancel</a>
+                 </div>
+            </div>
+            <div class="calander_div ">
+            	<span class="appointment_heading">Book an appointment Date</span>
+            	<div type="text" id="datepicker"></div>
+                <p class="date_choose">Your chosen date is : <span class="appoint_date"></span></p>
+                 <p class="change_text"><sub>To change date click on the date choosen</sub></p>
+                 <div class="time_slot">
+                 	<span class="label_heading">Choose the Appointment Time :</span>
+                 	<ul class="time_allotment">
+                    
+                    	
+                    </ul>
+                 </div>
+            </div>
+            
+        </div>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="messages">
+    	<div class="step_3_container clearfix">
+        	<div class="step_3_detail_section">
+            	<div class="address_details clearfix">
+                	<label><span class="speciality_type">Speciality Type </span><span class="specility_name"></span></label>	
+                    <label><span class="doctor_type">Speciality Type </span><span class="doctor_name"></span></label>	
+                </div>
+                <div class="subs_details clearfix">
+                	
+                </div>
+                
+                <div class="button_container step_2 clearfix">
+                     <a class="next_btn" href="javacsript:void(0);">Next</a>
+                     <a class="cancel_btn" href="javacsript:void(0);">Cancel</a>
+                 </div>
+            </div>
+            <div class="calander_div ">
+            	<span class="appointment_heading">Book an appointment Date</span>
+            	<div type="text" id="datepicker"></div>
+                <p class="date_choose">Your chosen date is : <span class="appoint_date"></span>
+                	
+                </p>
+                <p><sub>To change date click on the date choosen</sub></p>
+                
+            </div>
+            
+        </div>	
+    </div>
+    
+  </div>
+
+</div>
+        </div>
+      	
+      </div>
+      
+    </div>
+  </div>
